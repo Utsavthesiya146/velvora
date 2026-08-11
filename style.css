@@ -979,3 +979,483 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   9. CARE & SEASONING GUIDE STYLES
+   ========================================================================== */
+.guide-section {
+  padding: 6rem 0;
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section-description {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+.hindi-subtext {
+  font-size: 0.9em;
+  color: var(--color-text-subdued);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+.hi-desc, .hi-text {
+  font-size: 0.85rem;
+  color: #666678;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* Badges Bar */
+.guide-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-text-main);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.badge-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-btn-dark);
+}
+
+/* Guide Main Layout Grid */
+.guide-main-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+/* Infographic Preview Card */
+.guide-infographic-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 90px;
+}
+
+.infographic-image-wrap {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #111;
+  aspect-ratio: 9 / 16;
+  max-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infographic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform var(--transition-normal), opacity var(--transition-fast);
+}
+
+.infographic-image-wrap:hover .infographic-img {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.infographic-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.infographic-image-wrap:hover .infographic-overlay {
+  opacity: 1;
+}
+
+.zoom-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: var(--color-text-main);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.infographic-card-body {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.infographic-card-body h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.infographic-card-body p {
+  font-size: 0.8rem;
+  color: var(--color-text-subdued);
+}
+
+/* Guide Step Blocks */
+.guide-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guide-block {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+.guide-block-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.block-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  background-color: var(--color-btn-dark);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.5rem;
+}
+
+.block-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+/* Step Cards Grid */
+.steps-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.step-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.step-card:hover {
+  border-color: var(--color-text-main);
+  transform: translateX(4px);
+}
+
+.step-num {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background-color: var(--color-btn-dark);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.step-content h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-main);
+}
+
+.en-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* Warning & Caution Callout */
+.guide-warning-box {
+  background-color: #FFF9F2;
+  border: 1px solid #FFE4C4;
+  border-left: 4px solid #E65100;
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.warning-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.warning-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background-color: #FFE0B2;
+  color: #E65100;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.warning-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #B71C1C;
+  margin-bottom: 0.25rem;
+}
+
+.warning-subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #E65100;
+}
+
+.warning-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.warning-rule-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FFE4C4;
+}
+
+.rule-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rule-icon.danger {
+  background-color: #FFEBEE;
+  color: #C62828;
+}
+
+.rule-icon.success {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+}
+
+.rule-icon.info {
+  background-color: #E3F2FD;
+  color: #1565C0;
+}
+
+.rule-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.rule-text strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.25rem;
+}
+
+.rule-text p {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.35;
+}
+
+.warning-quote {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #B71C1C;
+  font-weight: 500;
+  padding-top: 1rem;
+  border-top: 1px dashed #FFCC80;
+}
+
+/* Maintenance & Disclaimer Box */
+.guide-maintenance-box {
+  background-color: var(--color-lavender-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+}
+
+.maintenance-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.maintenance-info h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.maintenance-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.maintenance-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.maintenance-list strong {
+  color: var(--color-text-main);
+}
+
+.maintenance-list .hi-text {
+  display: block;
+}
+
+.maintenance-qr-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.qr-icon-wrap {
+  margin: 0 auto 0.75rem;
+  color: var(--color-btn-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance-qr-card h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Infographic Lightbox Modal */
+.infographic-modal-box {
+  width: 90vw;
+  max-width: 800px;
+  max-height: 90vh;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.modal-img-container {
+  overflow-y: auto;
+  max-height: 85vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #111118;
+}
+
+.modal-img-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .guide-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-infographic-card {
+    position: relative;
+    top: 0;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .warning-rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maintenance-grid {
+    grid-template-columns: 1fr;
+  }
+}
