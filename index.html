@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELVORA Cookware | Premium Kitchen Essentials</title>
+  <meta name="description"
+    content="VELVORA Cookware - Practical, stylish, and high-performance kitchenware. Explore our non-stick cookware collection and shop directly on Meesho.">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="VELVORA Cookware | Premium Kitchen Essentials">
+  <meta property="og:description"
+    content="Transforming kitchens into spaces of effortless excellence. Shop VELVORA Cookware on Meesho.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./logo.jpg">
+  <meta name="theme-color" content="#2A1B38">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="./logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== 1. STICKY HEADER ==================== -->
+  <header class="header" id="main-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="VELVORA Home">
+        <img src="logo.jpg" alt="VELVORA Cookware Logo" class="logo-badge-img">
+        <div>
+          <span class="brand-name">VELVORA</span>
+          <span class="brand-sub">cookware</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#products" class="nav-link">ALL PRODUCTS</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Icons -->
+      <div class="header-actions">
+        <!-- Search Icon Button -->
+        <button class="icon-btn" id="open-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Icon Button -->
+        <a href="#products" class="icon-btn" aria-label="View Cart or Products">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-name">VELVORA</span>
+      </a>
+      <button class="close-drawer-btn" id="close-drawer" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#products" class="mobile-nav-link">ALL PRODUCTS</a></li>
+        <li><a href="#stores" class="mobile-nav-link">Official Stores</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Search Modal -->
+  <div class="modal-overlay" id="search-modal">
+    <div class="search-modal-box">
+      <button class="close-modal-btn" id="close-search-btn" aria-label="Close search">&times;</button>
+      <div class="search-input-wrapper">
+        <input type="text" class="search-input" placeholder="Search VELVORA Cookware..." id="search-field">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-subtitle-tag">OFFICIAL BRAND</div>
+            <h1 class="hero-title">Elevate Your Kitchen</h1>
+            <a href="#products" class="btn-primary">
+              <span>ALL PRODUCTS</span>
+            </a>
+          </div>
+
+          <div class="hero-image-box">
+            <img src="assets/hero-cookware.png" alt="VELVORA Premium Cookware" class="hero-img" width="540"
+              height="540">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. INTERACTIVE SLIDESHOW SECTION ==================== -->
+    <section class="slideshow-section" id="showcase">
+      <div class="container slideshow-container">
+        <div class="slides-wrapper">
+          <!-- Slide 1 -->
+          <div class="slide-item active" data-slide="1">
+            <div class="slide-content">
+              <h2 class="slide-title">New Arrivals</h2>
+              <p class="slide-desc">
+                Introducing our latest non-stick cookware collection, engineered for uniform heat distribution and
+                effortless everyday cooking. Shop your favorites before they're gone!
+              </p>
+              <a href="#products" class="btn-primary">Shop now</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide-item" data-slide="2">
+            <div class="slide-content">
+              <h2 class="slide-title">Bestsellers</h2>
+              <p class="slide-desc">
+                Discover the bestsellers that have captured the hearts of home chefs across India with their perfect
+                blend of functionality, durability, and modern style.
+              </p>
+              <a href="#products" class="btn-primary">Shop now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="slideshow-nav">
+          <button class="nav-arrow" id="prev-slide-btn" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="slide-dots">
+            <span class="dot active" data-slide-target="1"></span>
+            <span class="dot" data-slide-target="2"></span>
+          </div>
+          <button class="nav-arrow" id="next-slide-btn" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. STATEMENT & INFO GRID ==================== -->
+    <section class="statement-section">
+      <div class="container">
+        <div class="statement-box">
+          <h2 class="statement-text">
+            Transforming kitchens into spaces of effortless excellence.
+          </h2>
+          <a href="#products" class="statement-link">Shop now &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Column Info Grid -->
+    <section class="info-grid-section">
+      <div class="container">
+        <div class="info-grid">
+          <!-- Col 1: CONTACT -->
+          <div class="info-col">
+            <h3 class="info-title">CONTACT</h3>
+            <p class="info-detail">
+              <a href="tel:+917046153170">+91 70461 53170</a><br>
+            </p>
+          </div>
+
+          <!-- Col 2: Quality First -->
+          <div class="info-col">
+            <h3 class="info-title">Quality first</h3>
+            <p class="info-detail">
+              We obsess over the details and strive to deliver the best cookware products at the best prices, every
+              time.
+            </p>
+          </div>
+
+          <!-- Col 3: MAIL -->
+          <div class="info-col">
+            <h3 class="info-title">MAIL</h3>
+            <p class="info-detail">
+              <a href="mailto:castoriacookware@gmail.com">castoriacookware@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. PRODUCTS COLLECTION ==================== -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">OUR COLLECTION</span>
+          <h2 class="section-title">ALL PRODUCTS</h2>
+        </div>
+
+        <div class="products-grid">
+          <!-- Card 1: Dosa Tawa -->
+          <article class="product-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Best Seller</span>
+              <img src="assets/dosa-tawa.jpg" alt="VELVORA Dosa Tawa" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Dosa Tawa</h3>
+              <p class="card-desc">
+                Ultra-smooth non-stick coating for crispy dosas, rotis, and chapatis with uniform heat retention.
+              </p>
+              <div class="card-footer">
+                <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+                  class="btn-card">
+                  Shop on Meesho &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Deep Kadhai -->
+          <article class="product-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Popular</span>
+              <img src="assets/kadhai.jpg" alt="VELVORA Deep Kadhai" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Deep Kadhai</h3>
+              <p class="card-desc">
+                Deep curved wok ideal for aromatic curries, deep frying, and traditional Indian stir-fries.
+              </p>
+              <div class="card-footer">
+                <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+                  class="btn-card">
+                  Shop on Meesho &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Fish Fry Pan -->
+          <article class="product-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Essential</span>
+              <img src="assets/fish-fry.jpg" alt="VELVORA Fish Fry Pan" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Fish Fry & Sauté Pan</h3>
+              <p class="card-desc">
+                Shallow fry pan perfect for golden searing, cutlets, pancakes, and stovetop delicacies.
+              </p>
+              <div class="card-footer">
+                <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+                  class="btn-card">
+                  Shop on Meesho &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Appam Maker -->
+          <article class="product-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Specialty</span>
+              <img src="assets/appam maker.jpg" alt="VELVORA Appam Maker" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Appam Maker</h3>
+              <p class="card-desc">
+                12-cavity precision non-stick cookware designed for golden crisp appams, paniyarams, and snacks.
+              </p>
+              <div class="card-footer">
+                <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+                  class="btn-card">
+                  Shop on Meesho &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: 2 in 1 Grill Tawa -->
+          <article class="product-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Versatile</span>
+              <img src="assets/grill-tawa.jpg" alt="VELVORA 2 in 1 Grill Tawa" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">2 in 1 Grill Tawa</h3>
+              <p class="card-desc">
+                Dual-surface grill tawa for healthy indoor grilling, paneer tikkas, sandwiches, and flat cooking.
+              </p>
+              <div class="card-footer">
+                <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+                  class="btn-card">
+                  Shop on Meesho &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. OFFICIAL MEESHO STORES ==================== -->
+    <section class="stores-section" id="stores">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">VERIFIED STOREFRONTS</span>
+          <h2 class="section-title">Shop Official Meesho Stores</h2>
+        </div>
+
+        <div class="stores-grid">
+          <div class="store-card">
+            <h3 class="store-title">VELVORA Direct Store</h3>
+            <p class="store-desc">
+              Browse our official catalog with pan-India doorstep delivery and authentic packaging on Meesho.
+            </p>
+            <a href="https://www.meesho.com/vrzte?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+              class="btn-primary">
+              Visit Store &rarr;
+            </a>
+          </div>
+
+          <div class="store-card">
+            <h3 class="store-title">Khodal Enterprise</h3>
+            <p class="store-desc">
+              Explore authorized distributor inventory and comprehensive kitchenware selection on Meesho.
+            </p>
+            <a href="https://www.meesho.com/KhodalEnterpris92078?_ms=3.0.3" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary">
+              Visit Store &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 7. FOOTER ==================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Main Menu -->
+        <div>
+          <h4 class="footer-col-title">Main menu</h4>
+          <ul class="footer-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#products">ALL PRODUCTS</a></li>
+            <li><a href="#stores">Official Stores</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Stay Inspired Newsletter -->
+        <div class="newsletter-box">
+          <h4 class="newsletter-title">Stay inspired</h4>
+          <p class="newsletter-desc">
+            Subscribe to receive updates on new product launches, special offers, and culinary tips.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" class="newsletter-input" placeholder="Email" required aria-label="Email address">
+            <button type="submit" class="newsletter-btn">Sign up</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VELVORA Cookware. All rights reserved.</p>
+        <p>Built with quality &amp; precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
