@@ -151,11 +151,44 @@ document.addEventListener('DOMContentLoaded', () => {
   if (openSearchBtn) openSearchBtn.addEventListener('click', openSearch);
   if (closeSearchBtn) closeSearchBtn.addEventListener('click', closeSearch);
 
+  // --- 4.5. INFOGRAPHIC LIGHTBOX MODAL ---
+  const triggerInfographicBtn1 = document.getElementById('trigger-infographic-modal');
+  const triggerInfographicBtn2 = document.getElementById('trigger-infographic-modal-2');
+  const closeInfographicBtn = document.getElementById('close-infographic-btn');
+  const infographicModal = document.getElementById('infographic-modal');
+
+  const openInfographic = () => {
+    if (infographicModal) {
+      infographicModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeInfographic = () => {
+    if (infographicModal) {
+      infographicModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (triggerInfographicBtn1) triggerInfographicBtn1.addEventListener('click', openInfographic);
+  if (triggerInfographicBtn2) triggerInfographicBtn2.addEventListener('click', openInfographic);
+  if (closeInfographicBtn) closeInfographicBtn.addEventListener('click', closeInfographic);
+
+  if (infographicModal) {
+    infographicModal.addEventListener('click', (e) => {
+      if (e.target === infographicModal) {
+        closeInfographic();
+      }
+    });
+  }
+
   // Close modals on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeDrawer();
       closeSearch();
+      closeInfographic();
     }
   });
 
